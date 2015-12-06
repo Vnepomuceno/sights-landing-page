@@ -1,13 +1,9 @@
 * {
   box-sizing: border-box; }
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #606c71; }
+html, body {
+    height:100%;
+}
 
 a {
   color: #1e6bb8;
@@ -243,3 +239,49 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+
+.background {
+  background-position: center;
+  vertical-align: center;
+}
+
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+    vertical-align: bottom;
+    text-align: center;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+.ghost-button-thick-border {
+  margin-top: 150px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  padding: 15px;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  font-size: 28px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-thick-border:hover,
+.ghost-button-thick-border:active {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
