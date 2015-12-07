@@ -9,17 +9,17 @@ html, body {
 
 .fullscreen,
 .content-a {
-    width:100%;
-    min-height:100%;
-    vertical-align: bottom;
-    text-align: center;
+  width:100%;
+  min-height:100%;
+  vertical-align: bottom;
+  text-align: center;
 }
 .not-fullscreen,
 .not-fullscreen .content-a,
 .fullscreen.not-overflow,
 .fullscreen.not-overflow .content-a {
-    height:100%;
-    overflow:hidden;
+  height:100%;
+  overflow:hidden;
 }
 
 .ghost-button-thick-border {
@@ -33,7 +33,7 @@ html, body {
   border-radius: 5px;
   text-align: center;
   outline: none;
-  font-size: 28px;
+  font-size: 38px;
   text-decoration: none;
   transition: background-color 0.2s ease-out,
               color 0.2s ease-out;
@@ -45,4 +45,12 @@ html, body {
   text-decoration: none;
   transition: background-color 0.3s ease-in,
               color 0.3s ease-in;
+}
+
+#subtitle {
+  padding-top: 30px;
+  color: white;
+  font: "Helvetica";
+  font-size: 27px;
+  display: none;
 }

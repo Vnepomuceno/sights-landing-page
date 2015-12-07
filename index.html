@@ -9,12 +9,14 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="scripts/transitions.js"></script>
+    <script type="text/javascript" src="scripts/animations.js"></script>
   </head>
   <body>
 
   <div class="fullscreen background" style="background-image:url('./images/background-photo.jpg');" >
-    <a class="ghost-button-thick-border" href="#signUpScreenAnchor" name="signUpScreen" id="signUpScreen" >Discover the best view you can possibly have</a>
+    <a class="ghost-button-thick-border" href="#signUpScreenAnchor" name="signUpScreen" id="signUpScreen" style="display:none" >Discover your favourite view of Lisbon</a>
+
+    <div id="subtitle" name="subtitle">At the point of your fingertips</div>
   </div>
 
   <a name="signUpScreenAnchor" id="signUpScreenAnchor"/>
@@ -26,6 +28,10 @@
 
   <script type="text/javascript">
   $(document).ready(function() {
+    showElementFaded('signUpScreen', 'a', 2900);
+    setTimeout(function() {
+      showElementFaded('subtitle', 'div', 2900);
+    }, 1500);
     $("#signUpScreen").click(function() {
       scrollToAnchor('signUpScreenAnchor');
     });
